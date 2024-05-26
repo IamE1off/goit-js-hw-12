@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 11</title>
+    <title>Gallery project</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,24 +17,29 @@
   </head>
   <body>
 
-   <header class="header">
-</header>
+    <header class="header"></header>
+
 
     <main>
 
-      <section class="section-form">
+   <section class="section-form">
 	<div class="container section-form__container">
 		<form class="search-form js-search-form" action="">
 			<input class="search-form__input" type="text" name="searchword">
-			<button class="search-form__btn" type="submit">Search</button>
+			<button class="search-form__btn btn js-search-form-submit-btn" type="submit">Search</button>
 		</form>
 	</div>
 </section>
+
       <section class="gallery">
 	<div class="gallery__container container">
 		<ul class="gallery__list js-gallery">
 
 		</ul>
+
+		<div class="load-more-wrap">
+			<button class="gallery__load-more-btn btn js-load-more-btn is-hidden">Load more</button>
+		</div>
 	</div>
 </section>
 

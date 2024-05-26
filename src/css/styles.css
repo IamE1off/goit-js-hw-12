@@ -1,3 +1,9 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
 @import url('./reset.css');
 
 * {
@@ -14,6 +20,9 @@ body {
   margin: 0 auto;
 }
 
+/*---------------*/
+/*--- loader --- */
+/*---------------*/
 .loader {
   width: 48px;
   height: 48px;
@@ -45,6 +54,10 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
+
+/*-------------------*/
+/*--- search form ---*/
+/*-------------------*/
 .section-form__container {
   padding-bottom: 32px;
 }
@@ -121,6 +134,9 @@ body {
   pointer-events: none;
 }
 
+/*---------------*/
+/*--- gallery ---*/
+/*---------------*/
 .gallery__list {
   display: flex;
   gap: 24px;
@@ -188,3 +204,9 @@ body {
   line-height: 2;
   letter-spacing: 0.04em;
 }
+
+.item-gallery__views {}
+
+.item-gallery__comments {}
+
+.item-gallery__downloads {}
