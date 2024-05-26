@@ -94,6 +94,21 @@ const onSearch = async event => {
     // Enable search form submit button
     enableSearchFormSubmitBtn(searchFormSubmitBtnEl);
 
+/////////////////////
+if (totalHits < 15) {
+      
+      enableSearchFormSubmitBtn(searchFormSubmitBtnEl);
+
+      iziToast.error({
+        message:
+          "We're sorry, but you've reached the end of search results.",
+        position: 'topRight',
+      });
+      form.reset();
+      hideLoader(loaderEl);
+      return;
+    }
+   /////////////////////////////////// 
     totalPages = Math.ceil(totalHits / PER_PAGE);
     if (totalPages > 1) {
       // Show laod more btn
@@ -192,3 +207,4 @@ const onLoadMorePress = async event => {
 
 // Load more btn click
 loadMoreBtnEl.addEventListener('click', onLoadMorePress);
+
